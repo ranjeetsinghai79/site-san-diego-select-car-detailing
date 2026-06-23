@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "auto-detailing",
-  name: "Apex Auto Detailing",
-  tagline: "Every Detail. Perfected.",
-  phone: "(555) 012-3456",
-  phoneHref: "tel:+15550123456",
-  email: "hello@apexautodetail.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Manteca", "Pleasanton", "Livermore"],
-  license: "CA Business #012345",
-  since: "2014",
-  google_rating: "5.0",
-  review_count: "276",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "San Diego Select",
+    tagline: "Luxury Auto Detailing, Flawless Finish",
+    phone: "(858) 330-0726",
+    phoneHref: "tel:+18583300726",
+    email: "info@sandiegoselect.com",
+    address: "888 Prospect St La Jolla, CA 92037",
+    city: "La Jolla",
+    serviceAreas: ["Rancho Bernardo", "Lakeside", "Santa Luz", "East Lake", "4S Ranch", "Poway", "San Carlos", "Oceanside", "Del Mar", "El Cajon", "Carmel Valley", "Encinitas", "Rancho Santa Fe", "Solana Beach", "Pacific Beach", "La Mesa", "Coronado", "Chula Vista", "Hillcrest", "North Park", "Golden Hill", "Bankers Hill", "La Jolla", "Point Loma", "Ocean Beach", "Sunset Cliffs", "Mission Valley"],
+    license: "Licensed & Insured",
+    since: "2010",
+    google_rating: "5.0",
+    review_count: "150",
+    emergency: false,
+    theme: "ember",
+    niche: "auto-detailing",
+  },
 
   services: [
-  { icon: "sparkles", title: "Ceramic Coating", desc: "9H hardness nano-ceramic protection. 5-year warranty. Hydrophobic, scratch-resistant, showroom shine that lasts years.", urgent: false },
-  { icon: "star", title: "Paint Correction", desc: "Multi-stage machine polishing removes swirls, scratches, and oxidation. Restore your car's true shine.", urgent: false },
-  { icon: "zap", title: "Full Detail Package", desc: "Interior + exterior deep clean. Clay bar, hand wax, leather conditioning, engine bay. The full treatment.", urgent: false },
-  { icon: "droplets", title: "Interior Detail", desc: "Deep extraction shampoo, leather cleaning and conditioning, dashboard and trim dressing. Fresh from the inside.", urgent: false },
-  { icon: "shield", title: "PPF (Paint Film)", desc: "Self-healing urethane film for bumpers, hoods, mirrors. Invisible protection against rock chips and scratches.", urgent: false },
-  { icon: "sun", title: "Window Tinting", desc: "Premium ceramic tint. Heat rejection, UV protection, privacy. Legal limits honored. Lifetime warranty.", urgent: false },
-],
+    { icon: "sparkles", title: "Full Detail", desc: "Experience a comprehensive interior and exterior rejuvenation for your vehicle.", urgent: false },
+    { icon: "shield-check", title: "Ceramic Coating", desc: "Protect your paint with a durable, long-lasting ceramic coating for superior shine and defense.", urgent: false },
+    { icon: "wrench", title: "Paint Correction", desc: "Eliminate swirl marks, scratches, and imperfections to restore your car's flawless finish.", urgent: false },
+    { icon: "home", title: "Interior Detail", desc: "Deep clean and sanitize every surface, leaving your car's interior fresh and immaculate.", urgent: false },
+    { icon: "truck", title: "Exotic Car Detailing", desc: "Specialized care for high-end vehicles, ensuring a pristine finish worthy of its luxury.", urgent: false },
+    { icon: "scissors", title: "Vinyl, Window Tint, PPF", desc: "Expert application and removal of vinyl wraps, window tint, and paint protection film.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Marcus J.", location: "Tracy, CA", stars: 5, text: "Ceramic coated my BMW last year. Water beads off like nothing. Hasn't been to a car wash since. Worth every single dollar." },
-  { name: "Tyler R.", location: "Pleasanton, CA", stars: 5, text: "Paint correction on my 10-year-old Mustang made it look brand new. The swirl marks are completely gone. Insane transformation." },
-  { name: "David K.", location: "Stockton, CA", stars: 5, text: "Full interior detail after a road trip disaster. Kids had destroyed it. Looks like I just drove it off the lot. Literally perfect." },
-],
+    { name: "Sarah L.", location: "La Jolla", stars: 5, text: "San Diego Select did an incredible full detail on my Porsche. It looked better than when I bought it! The team was professional, on time, and the results were absolutely stunning. Worth every penny for the luxury treatment." },
+    { name: "Mark T.", location: "Rancho Santa Fe", stars: 5, text: "I had my classic Mustang's paint corrected and a ceramic coating applied by San Diego Select. The difference is night and day. The paint depth and shine are unbelievable, and the service was top-notch from start to finish. Highly recommend for any car enthusiast." },
+    { name: "Jessica R.", location: "Del Mar", stars: 5, text: "My SUV's interior was a disaster with kids and pets, but San Diego Select worked magic. The stain removal and odor elimination were fantastic. It feels like a brand new car inside! Their mobile service was so convenient too." }
+  ],
 
   trustBadges: [
-  "Ceramic Pro Certified", "Paint Correction Specialists", "5-Star Google Rated",
-  "5-Year Ceramic Warranty", "Mobile Service Available", "Free Estimates"
-],
+    "Luxury Vehicle Experts", "Mobile Detailing Available", "Open 7 Days a Week", "5-Star Rated Service", "Premium Products Used", "Experienced Technicians"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1380,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 12,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 5.0, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1000, label: "Vehicles Detailed", suffix: "+", decimals: 0 },
+    { value: 10, label: "Years Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books detailing appointments, sends reminders, and collects post-service reviews via call, text, or WhatsApp. Zero missed bookings."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "sparkles", title: "Luxury Finish", desc: "We deliver a showroom-quality finish for every vehicle, specializing in high-end and exotic cars." },
+    { icon: "truck", title: "Mobile Convenience", desc: "Our expert detailers come to you, providing premium services at your home or office." },
+    { icon: "clock", title: "Open 7 Days a Week", desc: "Flexible scheduling to fit your busy lifestyle, ensuring your car is always pristine." },
+    { icon: "award", title: "Certified Professionals", desc: "Our team is highly trained and experienced in the latest detailing techniques and products." },
+    { icon: "shield-check", title: "Premium Products", desc: "We use only the highest quality, safest products for superior results and vehicle protection." },
+    { icon: "heart", title: "Customer Satisfaction", desc: "Your complete satisfaction is our priority; we go above and beyond for every detail." }
+  ],
 
-  formServiceOptions: [
-  "Ceramic Coating",
-  "Paint Correction",
-  "Full Detail Package",
-  "Interior Detail",
-  "PPF (Paint Film)",
-  "Window Tinting"
-],
+  formServiceOptions: ["Full Detail", "Ceramic Coating", "Paint Correction", "Interior Detail", "Exotic Car Detailing", "Motorcycle Detailing"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
